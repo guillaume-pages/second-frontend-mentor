@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.background-slate-500 { background: #68778D;}
+.background-slate-900 { background: #1F314F;}
+.body { height: 100%; margin: 0; padding: 0;}
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F4D04E;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card { 
+    display: flex;
+    width: 324px;
+    padding: var(--spacing-200, 24px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-200, 24px);
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid var(--color-gray-950, #111);
+    background: var(--color-white, #FFF);
+    box-shadow: 8px 8px 0px 0px #000;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-150, 12px);
+    align-self: stretch;
+}
+.article { 
+    border-radius: 10px;
+    width: 100%;
+}
+.author {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-150, 12px);
+}
+.avatar {
+    width: 32px;
+    height: 32px;
+}
+.title {
+    align-self: stretch;
+    color: var(--color-gray-950, #111);
+    font-family: Figtree;
+    font-size: var(--spacing-200, 24px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+}
+.title:hover {
+    color:#F4D04E;
+}
+.learning {
+    display: flex;
+    padding: var(--spacing-50, 4px) var(--spacing-150, 12px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-100, 8px);
+    border-radius: 4px;
+    background: var(--color-yellow, #F4D04E);
+}
+.learning p {
+    color: var(--color-gray-950, #111);
+    font-family: Figtree;
+    font-size: var(--font-size-text-preset-3, 14px);
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+}
+.publishedDate {
+    color: var(--color-gray-950, #111);
+    font-family: Figtree;
+    font-size: var(--font-size-text-preset-3, 14px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+.text {
+    color: var(--color-gray-500, #6B6B6B);
+    font-family: Figtree;
+    font-size: var(--font-size-text-preset-2, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        padding: var(--spacing-150, 16px);
+    }
+    .card {
+        width: 80%;
+        box-shadow: 4px 4px 0px 0px #000;
+    }
+    .title {
+        font-size: 18px;
+    }
+    .text {
+        font-size: 12px;
+    }
+}
